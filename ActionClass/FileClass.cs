@@ -78,6 +78,7 @@ namespace FileExchangerAPI.ActionClass
             {
                 var fileData = _context.Files.Select(x => new File()
                 {
+                    Id = x.Id,
                     FileName = x.FileName,
                     UserId = x.UserId,
                     UploadedAt = x.UploadedAt,
